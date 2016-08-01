@@ -7,6 +7,9 @@
     "src",
     "lib"
   ],
+  "bin": {
+    "maybe-unused": "./src/command-tool.js"
+  },
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.8.0",
