@@ -7,7 +7,7 @@ const devDependencies = Object.keys(pkg.devDependencies || {});
 const allDependencies = dependencies.concat(devDependencies);
 allDependencies.sort();
 const regexpEscape = text => text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
-const patternDependencies = new RegExp(`'(${allDependencies.map(regexpEscape).join('|')})['/]`, 'g');
+const patternDependencies = new RegExp(`(['"])(${allDependencies.map(regexpEscape).join('|')})(\\1|/)`, 'g');
 
 const flatten = arr => {
   const flat = [].concat(...arr);
