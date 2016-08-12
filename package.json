@@ -1,6 +1,6 @@
 {
   "name": "maybe-unused",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find possible unused node modules",
   "main": "lib/index.js",
   "files": [
